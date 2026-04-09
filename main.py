@@ -6,15 +6,14 @@ print("Угадай число от 1 до 100")
 
 for i in range(3):
     x = int(input("Число: "))
-    if x > n :
-      print("меньше")
-    if x < n :
+    if x > n:
+        print("меньше")
+    elif x < n:
         print("больше")
-    if x == n:
+    else:
         print("Угадал")
         break
-    else:
-        print("Не угадал")
+else:
+    print("Не угадал")
+
 print("Было:", n)
-
-
